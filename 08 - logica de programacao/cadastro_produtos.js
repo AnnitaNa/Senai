@@ -23,9 +23,9 @@ if (peso > 100) {
 let lista_produtos = ["A", "B", "C"];
 
 if (lista_produtos.length <= 10) {
-    console.log ("Pode-se cadastrar novo produto")
+    console.log ("Pode-se cadastrar novo produto");
 } else {
-    console.log("Não é possível cadastrar mais produtos")
+    console.log("Não é possível cadastrar mais produtos");
 }
 
 
@@ -34,7 +34,7 @@ if (lista_produtos.length <= 10) {
 let produto = "peça";
 
 if (produto.length < 3) {
-    console.log ("ERRO! Nome do produto precisa ter 3 char ou mais")
+    console.log ("ERRO! Nome do produto precisa ter 3 char ou mais");
 } else {
-    console.log("Nome adequado")
+    console.log("Nome adequado");
 }
