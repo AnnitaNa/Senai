@@ -6,7 +6,8 @@
 // ********* by: Tatiane A. Nicchetti | tanicchetti@hotmail.com ***************
 // ****************************************************************************
 
-// código simples para verificar algumas condições. Deve-se rodar no terminal
+// código simples para verificar algumas condições. 
+//Deve-se baixar o pacote inteiro no computador e rodar no terminal
 // atividade do Senai, 16/02/022.
 
 
