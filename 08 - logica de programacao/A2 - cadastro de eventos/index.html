@@ -11,47 +11,60 @@
 
         <main>
 
-<section>
-            <label for="cevent">Nome do evento: </label>
-            <input type="text" id="cevent">
-            <button onclick="criaEvent()">Confirm</button>
-        <p id="cria-event-result">  </p>
-</section>
-  
+        <h1>Eventos</h1>
 
-            <form >
-                <label for="event">Choose an event: </label>
-                <select id="event" onchange="getEvent()">
-                    <option value="um">1</option>
-                    <option value="dois">2</option>
-                    <option value="três">3</option>
-                </select>
-            </form>
-            <p id="event-result">
-                
-            </p>
+        <h2>novo evento</h2>
+            <section>
+                <label for="criaEvent">Novo evento: <br></label>
+                <input type="text" id="criaEvent">
+                <button onclick="criaEvent()">Confirm</button>
+                <p id="cria-event-result">  </p>
+            </section>
 
-           
-           
+            
+           <section>
             <form onchange="diffDate()">
                 <div>
-                    <label for="date-event">Dia do evento: </label>
+                    <label for="date-event">Dia do evento: <br></label>
                     <input type="date" id="date-event" name="data-event">
                 </div>
 
             </form>
-            <p id="date-event-result"> 
-                
-            </p>
+            <p id="date-event-result"> </p>
+           </section>
+  
+            <h2>participantes</h2>
+           <section>
+            <form >
+                <label for="event">Participantes por evento: <br></label>
+                <select id="event" onchange="getEvent()">
+                    <option value="um">Evento 1</option>
+                    <option value="dois">Evento 2</option>
+                    <option value="três">Evento 3</option>
+                </select>
+            </form>
+            <p id="event-part">  </p>
+            <p id="n-part"></p>
+           </section>
 
-            <form onchange="getAge()">
-                <div>
-                    <label for="date-birth">Dia de nascimento: </label>
-                    <input type="date" id="date-birth" name="date-birth">
-                </div>
-            </form> 
-            <p id="date-birth-result"></p>
+           
+            <h3>cadastrar novos participantes</h3>
+            <section>
+                <form onchange="getAge()">
+                    <div>
+                        <label for="date-birth">Dia de nascimento: <br></label>
+                        <input type="date" id="date-birth" name="date-birth">
+                    </div>
+                </form> 
+                <p id="date-birth-result"></p>
+            </section>
 
+            <section>
+                <label for="member">Novo participante: <br></label>
+                <input type="text" id="member">
+                <button onclick="participante()">Confirm</button>
+                <p id="member-result">  </p>
+            </section>
 
 
         </main>
