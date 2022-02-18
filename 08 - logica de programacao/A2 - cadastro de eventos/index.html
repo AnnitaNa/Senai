@@ -11,19 +11,33 @@
 
         <main>
 
+            <form onchange="getEvent()">
+                <label for="event">Choose an event: </label>
+                <select id="event">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </form>
            
-            <form onchange="getDate()">
+            <form onchange="diffDate()">
                 <div>
-                    <label for="data">Dia do evento: </label>
-                    <input type="date" id="data" name="data">
+                    <label for="date-event">Dia do evento: </label>
+                    <input type="date" id="date-event" name="data-event">
                 </div>
 
             </form>
-            <p id="data-result"> 
+            <p id="date-event-result"> 
                 
             </p>
 
-            <form 
+            <form onchange="getAge()">
+                <div>
+                    <label for="date-birth">Dia de nascimento: </label>
+                    <input type="date" id="date-birth" name="date-birth">
+                </div>
+            </form> 
+            <p id="date-birth-result"></p>
 
 
 
