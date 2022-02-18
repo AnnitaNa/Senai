@@ -11,9 +11,17 @@
 
         <main>
 
+<section>
+            <label for="cevent">Nome do evento: </label>
+            <input type="text" id="cevent">
+            <button onclick="criaEvent()">Confirm</button>
+        <p id="cria-event-result">  </p>
+</section>
+  
+
             <form >
                 <label for="event">Choose an event: </label>
-                <select id="event"onchange="getEvent()">
+                <select id="event" onchange="getEvent()">
                     <option value="um">1</option>
                     <option value="dois">2</option>
                     <option value="três">3</option>
@@ -22,6 +30,8 @@
             <p id="event-result">
                 
             </p>
+
+           
            
             <form onchange="diffDate()">
                 <div>

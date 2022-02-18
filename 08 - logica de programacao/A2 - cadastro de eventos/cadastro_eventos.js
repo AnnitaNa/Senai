@@ -1,3 +1,24 @@
+
+class lista_eventos {
+    constructor (name) {
+        this._name = name;
+    }
+}
+
+
+function criaEvent() {
+    var name = document.getElementById("cevent").value;
+    let nuev_evento = new lista_eventos(name);
+ 
+    document.getElementById("cria-event-result").innerHTML = nuev_evento._name;
+}
+
+
+
+
+// -------------------------------------------------------
+
+
 let participante = ["a", "b", "c"];
 
 function getEvent () {
