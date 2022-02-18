@@ -1,6 +1,6 @@
 
 function getEvent () {
-    const event = document.getElementById("event").select.options[select.selectIndex].value;
+    const event = document.getElementById("event").value;
     alert(event);
 }
 
@@ -31,5 +31,4 @@ function getAge () {
     } else {
         document.getElementById("date-birth-result").innerHTML = "participante apto";
     }
-
 }
