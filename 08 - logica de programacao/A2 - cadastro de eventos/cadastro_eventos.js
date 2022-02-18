@@ -1,7 +1,19 @@
+let participante = ["a", "b", "c"];
 
 function getEvent () {
-    const event = document.getElementById("event");
-    document.getElementById("event-result").innerHTML =  event.value;
+    const event = document.getElementById("event").value;
+
+    switch (event) {
+        case "um": 
+            document.getElementById("event-result").innerHTML =`participantes (${participante.length}): ` + participante;
+            break;
+        case "dois":
+            alert("dois, 1, 2, 3");
+            break;
+        case "três":
+            alert("três, 1, 2 e 3");
+            break;
+    }
 }
 
 
