@@ -132,3 +132,21 @@ function criaEvent() {
 // -------------------------------------------------------
 
 
+/**   try to create event using arrays
+ 
+ let list_arr = ["evento1", "evento2", "evento3"]
+ 
+  function criaEvent() {
+    var name = getValueFromForm ("criaEvent");
+    
+    if (name.lenght > 0) {
+        
+    } else {
+        let name = new Array()
+    }
+ 
+    
+}
+
+
+ */
