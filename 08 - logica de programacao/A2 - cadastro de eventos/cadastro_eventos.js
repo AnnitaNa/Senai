@@ -1,7 +1,7 @@
 
 function getEvent () {
-    const event = document.getElementById("event").value;
-    alert(event);
+    const event = document.getElementById("event");
+    document.getElementById("event-result").innerHTML =  event.value;
 }
 
 
