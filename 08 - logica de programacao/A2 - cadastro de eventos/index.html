@@ -37,13 +37,18 @@
            <section>
             <form >
                 <label for="event">Escolha o evento: <br></label>
-                <select id="event" onchange="getMembers ()">
-                   <option value="Carnaval">Carnaval</option>
-                    
+                <select id="event" onchange="getMembers (); verParticipantes()">
+                    <option value="none" selected disabled hidden>Select</option>
+                    <option value="Carnaval">Carnaval</option>
                 </select>
             </form>
-         
            </section>
+
+           <section>
+                <label for="total-members">Lista de participantes:</label>
+                <button onclick="verParticipantes()">Ver</button>
+                <p id="total-members"></p>
+            </section>
 
            
             <h3>cadastrar novos participantes</h3>
@@ -59,17 +64,12 @@
             <section>
                 <label for="member">Novo participante: <br></label>
                 <input type="text" id="member">
-                <button onclick="participante()">Confirm</button>
+                <button onclick="participante();verParticipantes()">Confirm</button>
                 <p id="member-result">  </p>
        
             </section>
 
-            <section>
-                <label for="total-members">Lista de participantes:</label>
-                <button onclick="verParticipantes()">Ver</button>
-                <p id="total-members"></p>
-            </section>
-
+           
         </main>
         <footer></footer>
     </body>
