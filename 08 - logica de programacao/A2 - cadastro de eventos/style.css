@@ -12,31 +12,39 @@ html, body, div, span, applet, object, iframe, figure, h1, h2, h3, h4, h5, h6, p
 }
 
 html {
-    background-color: black;
+    background-color:darkcyan;
     color:aliceblue;
     font-size: 20px;
-  
+}
+
+main {
+    margin: 0px 100px;
 }
 
 section {
- 
-    margin: 40px;
+    margin: 20px 40px;
+    padding: 30px 0px;
+}
+
+.container {
+    display: flex;
 }
 
 button {
-    background-color: aqua;
+    background-color: darkslategray;
+    color: white;
     border-radius: 10px;
     padding: 3px 10px;
-    border: 1px blue solid;
+    border: 1px;
     font-size: 70%;
     margin-left: 20px;
 }
 
 p {
-    background-color: aqua;
-    color: black;
-   
-    margin: 3px 0px;
+    background-color: darkslategray;
+    color: white;
+    padding: 0 20px; 
+    border-radius: 10px;
 }
 
 
@@ -51,22 +59,31 @@ input, select {
 h1, h2, h3 {
     text-align: center;
     text-transform: uppercase;
+
 }
 
 
 
 h1 {
     font-size: 50px;
-    margin: 30px;
+    margin-bottom: 30px;
+    padding: 20px 0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:darkslategray;
 }
 
 h2 {
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:darkslategray;
+}
+
+h3::before, h3::after {
+    content: " ------------ ";
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px 90px;
 }
