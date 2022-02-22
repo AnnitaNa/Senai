@@ -49,19 +49,7 @@ function memberLimit(n) {
     }
 }
 
-//see if the member is already at the event and if the string is not empty
-function validateName (theEvent,name) {
 
-    if (theEvent.includes(`${name}`)) {
-        document.getElementById("member-result").innerHTML = ` ${name} já é membro desse evento`;
-        exit;
-    }
-
-    if (name == "") {
-        document.getElementById("member-result").innerHTML ="Por favor, coloque um nome válido";
-        exit;
-    }
-}
 
 
 //get the age
@@ -81,17 +69,32 @@ function getAge () {
 function participante() {
     const event = getValueFromForm ("event");
     const theEvent = whichEvent(event);
-    memberLimit (theEvent.length);
 
+    memberLimit (theEvent.length);
     getAge();
    
     let name = getValueFromForm ("member");
-    validateName (theEvent,name)
+    if (validateEl (theEvent,name)) {
+        document.getElementById("member-result").innerHTML = ` ${name} já é membro desse evento ou nome é inválido`;
+        exit;
+    }
     
 
     theEvent.push(name);
     document.getElementById("member-result").innerHTML = `${name} foi adicionado a ${event}. <br> Agora há ${theEvent.length} participantes`;
 }
+
+
+
+//vê se el está contido em arr ou se el é vazio
+function validateEl(arr, el) {
+    if(arr.includes(`${el}`) || el=="") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 // get the difference between a given date and today (in miliseconds)
 function getDate(d) {
@@ -105,48 +108,32 @@ function diffDate() {
     const diff = getDate("date-event");
 
     if (diff < 0) {
-        document.getElementById("date-event-result").innerHTML = "Data válida";
+        return;
     } else {
-        document.getElementById("date-event-result").innerHTML = "Data inválida!";
-       
+        document.getElementById("cria-event-result").innerHTML ="Data inválida!";
+       exit;
     }
 }
 
-//   ----  class event? 
-
-class lista_eventos {
-    constructor (name) {
-        this._name = name;
-    }
-}
-
+let list_events = ["a", "b", "c"];
 
 function criaEvent() {
-    var name = getValueFromForm ("criaEvent");
-    let nuev_evento = new lista_eventos(name);
- 
-    document.getElementById("cria-event-result").innerHTML = nuev_evento._name;
+     
+    diffDate();
+    
+    var newEvent = getValueFromForm ("criaEvent");
+    if (validateEl(list_events,newEvent)) {
+        document.getElementById("cria-event-result").innerHTML = "Esse evento já existe ou nome é inválido";
+    }   else {
+        list_events.push(`${newEvent}`)
+        var `${newEvent}` = new Array();
+        document.getElementById("cria-event-result").innerHTML = `Evento "${newEvent}" incluido. Todos os eventos: ${list_events}`;
+       
+        // includes the element in the list
+        var option = document.createElement("option");
+        option.text = `${newEvent}`;
+        option.value=`${newEvent}`;
+        document.getElementById("event").add(option);
+}
 }
 
-
-// -------------------------------------------------------
-
-
-/**   try to create event using arrays
- 
- let list_arr = ["evento1", "evento2", "evento3"]
- 
-  function criaEvent() {
-    var name = getValueFromForm ("criaEvent");
-    
-    if (name.lenght > 0) {
-        
-    } else {
-        let name = new Array()
-    }
- 
-    
-}
-
-
- */

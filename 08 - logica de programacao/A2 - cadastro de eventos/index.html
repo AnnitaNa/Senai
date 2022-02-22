@@ -14,23 +14,24 @@
         <h1>Eventos</h1>
 
         <h2>novo evento</h2>
-            <section>
-                <label for="criaEvent">Novo evento: <br></label>
-                <input type="text" id="criaEvent">
-                <button onclick="criaEvent()">Confirm</button>
-                <p id="cria-event-result">  </p>
-            </section>
+          
 
             
            <section>
-            <form onchange="diffDate()">
+            <form >
                 <div>
                     <label for="date-event">Dia do evento: <br></label>
                     <input type="date" id="date-event" name="data-event">
                 </div>
             </form>
-            <p id="date-event-result"> </p>
            </section>
+
+           <section>
+            <label for="criaEvent">Novo evento: <br></label>
+            <input type="text" id="criaEvent">
+            <button onclick="criaEvent()">Confirm</button>
+            <p id="cria-event-result">  </p>
+        </section>
   
             <h2>participantes</h2>
            <section>
@@ -40,6 +41,7 @@
                     <option value="Evento 1">Evento 1</option>
                     <option value="Evento 2">Evento 2</option>
                     <option value="Evento 3">Evento 3</option>
+                    
                 </select>
             </form>
             <p id="event-part">  </p>
