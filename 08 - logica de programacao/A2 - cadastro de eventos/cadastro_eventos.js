@@ -117,23 +117,26 @@ function diffDate() {
 
 let list_events = ["a", "b", "c"];
 
+
+
 function criaEvent() {
      
     diffDate();
     
     var newEvent = getValueFromForm ("criaEvent");
+
     if (validateEl(list_events,newEvent)) {
         document.getElementById("cria-event-result").innerHTML = "Esse evento já existe ou nome é inválido";
     }   else {
         list_events.push(`${newEvent}`)
-        var `${newEvent}` = new Array();
         document.getElementById("cria-event-result").innerHTML = `Evento "${newEvent}" incluido. Todos os eventos: ${list_events}`;
-       
+
+    
         // includes the element in the list
         var option = document.createElement("option");
         option.text = `${newEvent}`;
         option.value=`${newEvent}`;
         document.getElementById("event").add(option);
-}
-}
 
+    }
+}
