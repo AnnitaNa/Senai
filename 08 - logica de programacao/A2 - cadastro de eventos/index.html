@@ -36,15 +36,13 @@
             <h2>participantes</h2>
            <section>
             <form >
-                <label for="event">Participantes por evento: <br></label>
-                <select id="event" onchange="getEvent()">
-                    <option value="Evento 1">Evento 1</option>
-                    <option value="Evento 2">Evento 2</option>
-                    <option value="Evento 3">Evento 3</option>
+                <label for="event">Escolha o evento: <br></label>
+                <select id="event" onchange="getMembers ()">
+                   <option value="Carnaval">Carnaval</option>
                     
                 </select>
             </form>
-            <p id="event-part">  </p>
+         
            </section>
 
            
@@ -66,6 +64,11 @@
        
             </section>
 
+            <section>
+                <label for="total-members">Lista de participantes:</label>
+                <button onclick="verParticipantes()">Ver</button>
+                <p id="total-members"></p>
+            </section>
 
         </main>
         <footer></footer>
