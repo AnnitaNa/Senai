@@ -1,0 +1,69 @@
+ 
+ /* heading */
+ 
+
+ /*   1. HEADER      */
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+        header ul {
+            display: flex;
+            flex-direction: row;
+        }
+                header ul li {
+                    padding: 0 1em;
+                }
+
+
+/* 2. MAIN  */
+
+
+/*------   SUB MENU   */
+        .sub-menu ul {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+/*------  HERO         */
+
+/*------  SECTION    */
+
+section {
+    margin: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+        section .carrosel {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+                .carrosel .figure-container {
+                    display: flex;
+                    margin: 1rem;
+                }
+
+
+
+/*-----   FOOTER     */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+        .icone-footer {
+            display: flex;
+            flex-direction: row;
+        }
