@@ -1,23 +1,55 @@
  
- /* heading */
  
+ /*  EVERYTHING  */
+ 
+ *:link, *:visited  {
+    color:black;
+}
+ 
+ 
+ /* heading */
+ h4 {
+     font-size: 1.2rem;
+     text-transform: uppercase;
+ }
 
  /*   1. HEADER      */
 
 header {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin: 1rem 0;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: 99%;
+    position:fixed;
 }
-
+        header .search-bar {
+            width: 40%;
+        }
+        header .search-bar input {
+            width: 100%;
+            border-radius:5px;
+            background-color: white;
+            background-image: url("../img/search-icon.png");
+            background-repeat: no-repeat;
+            background-size: 3%;
+            background-position: right;
+            padding: 0.1rem 0;
+            border: 3px solid transparent;
+        }
         header ul {
             display: flex;
             flex-direction: row;
         }
+
                 header ul li {
                     padding: 0 1em;
+                    font-size: 1.1rem;
+                    font-weight:200;
                 }
 
 
@@ -27,11 +59,29 @@ header {
 /*------   SUB MENU   */
         .sub-menu ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background-color: rgb(236, 236, 236);
+            font-size: 0.9rem;
+            font-weight:bold;
+            text-transform:uppercase;
         }
 
+            .sub-menu .emphasis-menu {
+                color: red;
+            }
+
 /*------  HERO         */
+
+.hero {
+    background-color: aqua;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 /*------  SECTION    */
 
@@ -61,6 +111,9 @@ section {
 footer {
     display: flex;
     justify-content: space-between;
+    color:white;
+    background-color: black;
+    padding: 1rem;
 }
 
         .icone-footer {
