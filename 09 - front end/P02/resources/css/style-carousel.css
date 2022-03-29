@@ -1,0 +1,73 @@
+
+
+/* credits: based on https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  display: flex;
+  justify-content:center;
+}
+
+    .mySlides {
+      height: 300px;
+      position: relative;
+    }
+
+        .mySlides img {
+          width:fit-content;
+          height: 100%;
+        }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  color: rgba(0, 0, 0, 0.664);
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+      .prev:hover, .next:hover {
+          transform: scale(1.25);
+      }
+
+
+
+/* dots indicators */
+
+.dots-container {
+  text-align: center;
+}
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+
+    }
+
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

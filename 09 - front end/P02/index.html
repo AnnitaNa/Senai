@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
         <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+        <link href="./resources/css/style-carousel.css" type="text/css" rel="stylesheet">
     </head>
 
     <body>
@@ -42,8 +43,35 @@
             <!--     BANNER     -->
 
             <div class="hero">
-                <p>Game mania</p>
-                <p>você está pronto para jogar?</p>
+                <div class="slideshow-container">
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+        
+                    <div class="image-container">
+                        <div class="mySlides">
+                          <img src="./resources/img/test-1.jpg" active>
+                        </div>
+                        
+                        <div class="mySlides">
+                          <img src="./resources/img/test-2.jpg" >
+                        </div>
+                        
+                        <div class="mySlides">
+                          <img src="./resources/img/test-3.jfif">
+                      </div>
+                    </div>
+                    
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                </div>
+                
+                <br>
+                    
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
             </div>
 
             <!--    DESTAQUES    -->
@@ -187,4 +215,5 @@
             </div>
         </footer>
     </body>
+    <script src="./resources/js/script-carousel.js"></script>     <!-- after the main body to load the first image of carousel-->
 </html>
