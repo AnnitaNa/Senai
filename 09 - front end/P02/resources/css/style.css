@@ -13,12 +13,17 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
  
+.hide {
+    display: none;
+}
+
+
  
  /* heading */
 h2 {
     font-size: 2.5rem;
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin: 3rem 1rem 2rem;
     text-align: center;
 }
 
@@ -44,8 +49,7 @@ header {
     color: white;
     text-transform: uppercase;
     width: 100%;
-    position:fixed;
-    margin-top: -4rem; /* to not overflow sub-menu*/
+   
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
     z-index: 1;
 }
@@ -63,30 +67,73 @@ header {
             background-color: white;
             background-image: url("../img/search-icon.png");
             background-repeat: no-repeat;
-            background-size: 3%;
+            font-size: smaller;
+            background-size: 20px;
             background-position: right;
-            padding: 0.1rem 0;
             border: 3px solid transparent;
         }
-        header ul {
+        header nav {
             display: flex;
+            align-items: center;
             flex-direction: row;
         }
 
-                header ul li {
+                header nav div{
                     padding: 0 1em;
                     font-size: 1.1rem;
                     font-weight:200;
                 }
 
 
+                header .menu-burguer img{
+                    display: none;
+                }
+
+                .dropdown-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+
+                        .dropdown-menu-toggle {
+                            padding: 0.5rem auto;
+                            
+                        }
+                        .dropdown-items {
+                            padding: 0.5rem;
+                            border-radius: 5px;
+                            border-top-right-radius: 0px;
+                            background-color: rgba(14, 14, 131, 0.96);
+                            box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.8);
+                            position: absolute;
+                            z-index: 1;
+                            margin-top: 27px;
+                            
+                        }
+
+                        .dropdown-items ul {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .dropdown-items ul li {
+                            margin-right: 0;
+                            margin-left: auto;
+                        }
+
+                        .selected-menu {
+                            background-color: rgb(14, 14, 131);
+                            font-weight: 500;
+                        }
+
 /* 2. MAIN  */
+
 
 /*------   SUB MENU   */
         .sub-menu ul {
             display: flex;
             justify-content: space-around;
-            margin-top: 4rem;   /* margin top to not be behing fixed nav-bar*/
+           
             padding: 1rem 1rem;
             background-color: rgb(232, 232, 236);
             font-size: 1rem;
@@ -161,7 +208,7 @@ header {
 /*------  article    */
 
         .glider-container {
-            margin: 2rem 6rem;
+            margin: 1rem 3rem;
             text-align: center;
             display: flex;
             align-items: center;
@@ -260,7 +307,7 @@ header {
 
 
     #newsletter h4 {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
         font-weight: bold;
         margin-bottom: 0%;
     }
@@ -286,17 +333,18 @@ header {
     }
 
 
-/*-----   FOOTER     */
+/*-----  3. FOOTER     */
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color:white;
+    flex-wrap: wrap;
     background-color: black;
     padding: 1rem;
 }
         .footer-section {
-            padding: 0 0.5rem;
+            padding: 1rem;
         }
 
         .footer-section p {
@@ -307,3 +355,124 @@ footer {
             display: flex;
             flex-direction: row;
         }
+
+
+
+
+/*     MEDIA QUERY        */
+
+@media only screen and (max-width: 800px) {
+        
+    .sub-menu {
+            display: none;
+        }
+
+        header {
+            padding: 1rem;
+            margin-top: 0; 
+        }
+}
+
+ @media only screen and (max-width: 700px) {
+
+            html {
+                font-size: 14px;
+            }
+
+
+            /*   head */
+
+                    header .logo img {
+                        width: 8rem;
+                    }
+                    header .search-bar {
+                        width: 50%;
+                    }
+            
+                    header .dropdown-container {
+                         display: none;
+                    }
+                            
+
+                    header .menu-burguer img{
+                        display: flex;
+                        width: 20px;
+                        align-items: center;
+                    }
+
+             /*  prop - bar  */
+            
+            .prop-bar svg {
+                height: 20px;
+                margin: 0.5rem;
+            }
+
+            .prop-bar .text {
+                margin: 0.5rem 0;
+                width: 10rem;
+            }
+
+                    .prop-bar h4 {
+                        font-size: 1rem;
+                    }
+
+                    .prop-bar p {
+                        font-size: 0.7rem;
+                    }
+
+                    
+            #newsletter svg{
+                            height: 25px;
+                        }
+                    
+                    
+                        #newsletter h4 {
+                            font-size: 1.3rem;
+                        }
+
+                        #newsletter p {
+                           font-size: 0.9rem;
+                        }
+                    
+                        #newsletter input {
+                            padding: 0.2rem 0.5rem;
+                        }
+                    
+                        #newsletter button {
+                            padding: 0.25rem 1rem;
+                            font-size: 0.9rem;
+                        }
+
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+                            .figure-container .img-container {
+                                height: 60%;
+                            }
+
+                            
+                            .figure-container figcaption {
+                                font-size: large;
+                            }
+                                    figcaption .details {
+                                        font-size: 1rem;
+                                    }
+    
+                            .figure-container button {
+                                padding: 0.2rem 1rem;
+                                margin-bottom: 1rem;
+                            }
+
+        }
+
+
+        @media only screen and (max-width: 500px) {
+            
+            .figure-container figcaption {
+                font-size:medium;
+            }
+
+}

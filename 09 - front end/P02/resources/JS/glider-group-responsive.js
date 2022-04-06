@@ -27,7 +27,7 @@ gliders.forEach((glide) => {
     },
     responsive: [
       {
-      breakpoint: 700,
+      breakpoint: 600,
       settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
