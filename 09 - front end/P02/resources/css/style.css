@@ -58,6 +58,10 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
     z-index: 1;
 }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
         header .logo img {
             width: 10rem;
         }
@@ -90,7 +94,7 @@ header {
                 }
 
 
-                header .menu-burguer img{
+                header .menu-burguer {
                     display: none;
                 }
 
@@ -108,7 +112,7 @@ header {
                             padding: 0.5rem;
                             border-radius: 5px;
                             border-top-right-radius: 0px;
-                            background-color: rgba(14, 14, 131, 0.96);
+                            background-color: rgba(0, 0, 0, 0.833);
                             box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.8);
                             position: absolute;
                             z-index: 1;
@@ -127,8 +131,9 @@ header {
                         }
 
                         .selected-menu {
-                            background-color: rgb(14, 14, 131);
+                            background-color: rgb(42, 42, 45);
                             font-weight: 500;
+                            border-radius: 5px;
                         }
 
 /* 2. MAIN  */
@@ -138,17 +143,14 @@ header {
         .sub-menu ul {
             display: flex;
             justify-content: space-around;
-           
-            padding: 1rem 1rem;
+            padding: 0.25rem;
             background-color: rgb(232, 232, 236);
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight:bold;
             text-transform:uppercase;
         }
 
-        .sub-menu li {
-            margin: 0 1rem;
-        }
+
         .sub-menu ul li:hover {
             transform: scale(1.05);
             font-weight: bold;
@@ -289,11 +291,6 @@ header {
                             margin-bottom: 1rem;
                         }
 
-                        .figure-container button:hover {
-                            box-shadow: 5px 5px 10px rgb(109, 109, 109) ;
-                            transform: scale(1.1);
-                        }
-
 /*----- newsletter      */
 
 #newsletter {
@@ -347,11 +344,12 @@ footer {
     justify-content: space-around;
     color:white;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 1rem;
 }
         .footer-section {
             padding: 1rem;
+            width: 250px;
         }
 
         .footer-section p {
@@ -361,9 +359,14 @@ footer {
         .icone-footer {
             display: flex;
             flex-direction: row;
+            align-items: center;
         }
 
-
+    footer .footer-svg {
+                fill: white;
+                height: 15px;
+                margin: 0.5rem;
+    }
 
 
 
@@ -413,48 +416,16 @@ footer {
 
 /*     MEDIA QUERY        */
 
+    @media only screen and (max-width: 1000px) {
 
-@media only screen and (max-width: 800px) {
+            /*  HEADER */
         
-    .sub-menu {
-            display: none;
-        }
-
-        header {
-            padding: 1rem;
-            margin-top: 0; 
-        }
-}
-
- @media only screen and (max-width: 700px) {
-
-            html {
-                font-size: 14px;
+            header nav div{
+                padding: 0 0.5rem;
             }
 
-
-            /*   head */
-
-                    header .logo img {
-                        width: 8rem;
-                    }
-                    header .search-bar {
-                        width: 50%;
-                    }
-            
-                    header .dropdown-container {
-                         display: none;
-                    }
-                            
-
-                    header .menu-burguer img{
-                        display: flex;
-                        width: 20px;
-                        align-items: center;
-                    }
-
-             /*  prop - bar  */
-            
+            /*  prop - bar  */
+                
             .prop-bar svg {
                 height: 20px;
                 margin: 0.5rem;
@@ -464,68 +435,133 @@ footer {
                 margin: 0.5rem 0;
                 width: 10rem;
             }
+        
+            .prop-bar h4 {
+                font-size: 1rem;
+            }
+        
+            .prop-bar p {
+                font-size: 0.7rem;
+            }
 
-                    .prop-bar h4 {
-                        font-size: 1rem;
-                    }
+            
+    }
 
-                    .prop-bar p {
-                        font-size: 0.7rem;
-                    }
+
+
+    @media only screen and (max-width: 800px) {
+        
+            .sub-menu {
+                    display: none;
+                }
+
+            header {
+                padding: 1rem;
+                margin-top: 0; 
+            }
+
+
+    }
+
+    @media only screen and (max-width: 700px) {
+
+            html {
+                font-size: 14px;
+            }
+
+
+            /*   head */
+
+             header .logo img {
+                        width: 8rem;
+            }
+
+            header .search-bar {
+                        width: 50%;
+            }
+            
+            header .dropdown-container {
+                         display: none;
+            }
+                            
+
+            header .menu-burguer {
+                display: flex;
+               
+            }
+
+                header .menu-burguer img {
+                    width: 20px;
+                    align-items: center;
+                }
+
+             /*  prop - bar  */
+    
 
                     
             #newsletter svg{
-                            height: 25px;
-                        }
+                height: 25px;
+            }
                     
                     
-                        #newsletter h4 {
-                            font-size: 1.3rem;
-                        }
+            #newsletter h4 {
+                font-size: 1.3rem;
+            }
 
-                        #newsletter p {
-                           font-size: 0.9rem;
-                        }
+            #newsletter p {
+                font-size: 0.9rem;
+            }
                     
-                        #newsletter input {
-                            padding: 0.2rem 0.5rem;
-                        }
+            #newsletter input {
+                padding: 0.2rem 0.5rem;
+            }
                     
-                        #newsletter button {
-                            padding: 0.25rem 1rem;
-                            font-size: 0.9rem;
-                        }
+            #newsletter button {
+                padding: 0.25rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .glider-container {
+                margin: 1rem 1rem;
+            }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+
+            .figure-container .img-container {
+                height: 60%;
+            }
+
+                                
+            .figure-container figcaption {
+                font-size: large;
+            }
+
+                figcaption .details {
+                    font-size: 1rem;
+                }
+        
+            .figure-container button {
+                padding: 0.2rem 1rem;
+                margin-bottom: 1rem;
+            }
+
+    }
 
 
-
-        }
-
-        @media only screen and (max-width: 600px) {
-
-                            .figure-container .img-container {
-                                height: 60%;
-                            }
-
-                            
-                            .figure-container figcaption {
-                                font-size: large;
-                            }
-                                    figcaption .details {
-                                        font-size: 1rem;
-                                    }
-    
-                            .figure-container button {
-                                padding: 0.2rem 1rem;
-                                margin-bottom: 1rem;
-                            }
-
-        }
-
-
-        @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) {
             
             .figure-container figcaption {
                 font-size:medium;
             }
+
+            #newsletter h4 {
+                display: none;
+            }
+            #newsletter p {
+               display: none;
+            }
+
 
 }
