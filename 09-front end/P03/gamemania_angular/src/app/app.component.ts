@@ -3,6 +3,8 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,6 +15,7 @@ export class AppComponent {
   title = 'gamemania';
 
   constructor() { }
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

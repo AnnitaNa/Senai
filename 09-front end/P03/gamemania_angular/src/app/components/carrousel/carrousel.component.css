@@ -1,0 +1,62 @@
+
+                     .figure-container {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 1rem;
+                        background-color: rgba(25, 107, 240, 0.124);
+                        box-shadow: 5px 5px 10px 0 rgb(202, 198, 198);
+                        align-items: center;
+                        justify-content: space-between;
+                        width:15rem;
+                        height: 25rem;
+                        border-radius: 10px;
+                    }
+    
+                            .figure-container:hover {
+                                transform: scale(1.05);
+                                background-color:white;
+                                box-shadow: 12px 12px 10px rgb(204, 204, 204);
+                            }
+    
+                            .figure-container .img-container {
+                                height: 50%;
+                                margin: 0.5rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                
+                            }
+                                    .img-container img {
+                                        max-width:100%;
+                                        max-height: 100%;
+                                    }
+                            
+                            .figure-container figcaption {
+                                margin: 0 1rem;
+                                text-align: left;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+    
+                                    figcaption .description {
+                                        margin-bottom: 0.5rem;
+                                    }
+    
+                                    figcaption .details {
+                                        font-size: 0.7rem;
+                                        color:gray;
+                                    }
+    
+                                    figcaption .preco {
+                                        color: red;
+                                        font-weight: bold;
+                                    }
+                            .figure-container button {
+                                background-color: rgb(14, 14, 131);
+                                color:white;
+                                border-radius: 5px;
+                               
+                                padding: 0.2rem 1rem;
+                                margin-bottom: 1rem;
+                            }
