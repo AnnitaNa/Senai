@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { BlogPostCard } from '../../interfaces/blog-post-card';
+import { Cards } from 'src/app/interfaces/cards';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class CarrouselComponent {
 
 
   constructor() { }
-  posts: BlogPostCard[] = [
+  posts: Cards[] = [
     
     {
       description: "Notebook AXUS UTR-73 de 14'' 8G SSD 256G Wifi",

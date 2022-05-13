@@ -11,6 +11,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { PropbarComponent } from './components/propbar/propbar.component';
 
 
 
@@ -22,6 +24,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     CarrouselComponent,
     HeaderComponent,
+    BannerComponent,
+    PropbarComponent,
   
   ],
   imports: [

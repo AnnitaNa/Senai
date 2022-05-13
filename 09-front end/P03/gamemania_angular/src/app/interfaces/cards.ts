@@ -1,4 +1,4 @@
-export interface BlogPostCard {
+export interface Cards {
   description: string;
   image: string;
   prevPrice: string;
