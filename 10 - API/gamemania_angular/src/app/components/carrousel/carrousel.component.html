@@ -1,0 +1,21 @@
+
+       <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide  *ngFor="let post of listaproducts">
+                        <div class="slide">
+                                <figure class="figure-container">
+                                    <div class="img-container">
+                                        <img [src]="post.image">
+                                    </div>
+                                    <figcaption>
+                                        <p class="description">{{post.description}}</p>
+                                        <p class="details"> de <s>{{post.prevPrice}}</s> por</p>
+                                        <p class="preco">{{post.price}}</p>
+                                        <p class="details">{{post.method}}</p>
+                                    </figcaption>
+                                    <button>Comprar</button>
+                                </figure>
+                        </div>
+                </ng-template>
+
+        </owl-carousel-o> 
+

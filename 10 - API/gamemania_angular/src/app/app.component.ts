@@ -1,20 +1,20 @@
+
+
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Cards } from 'src/app/interfaces/cards';
+
 
 
 @Component({
-  selector: 'app-carrousel',
-  templateUrl: './carrousel.component.html',
-  styleUrls: ['./carrousel.component.css']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 
-export class CarrouselComponent {
+export class AppComponent {
+  title = 'gamemania';
 
-
-  constructor() { }
   
-
 
   customOptions: OwlOptions = {
     loop: true,
@@ -42,5 +42,7 @@ export class CarrouselComponent {
     },
     nav: true
   }
-
 }
+
+
+

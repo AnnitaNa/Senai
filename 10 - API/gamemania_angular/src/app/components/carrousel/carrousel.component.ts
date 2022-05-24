@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Cards } from 'src/app/interfaces/cards';
+import { ProductsService } from 'src/app/services/products.service';
 
 
 @Component({
@@ -11,10 +12,24 @@ import { Cards } from 'src/app/interfaces/cards';
 
 export class CarrouselComponent {
 
-
-  constructor() { }
+  constructor(private productsService: ProductsService) { }
   
+  listaproducts = [] as Cards[]
 
+  ngOnInit(): void {
+    this.carregarCard()
+  }
+
+  carregarCard () {
+    this.productsService.getposts().subscribe(
+      (cardsRecebidos: Cards[]) => {
+        this.listaproducts = cardsRecebidos;
+        
+      }
+    )
+  }
+
+  
 
   customOptions: OwlOptions = {
     loop: true,

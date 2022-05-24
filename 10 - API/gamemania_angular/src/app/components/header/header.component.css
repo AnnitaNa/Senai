@@ -1,0 +1,97 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+   
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
+    z-index: 1;
+}
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            width: 10rem;
+        }
+
+        header .search-bar {
+            width: 40%;
+            margin: 0 1rem;
+        }
+        header .search-bar input {
+            width: 100%;
+            border-radius:5px;
+            background-color: white;
+            background-image: url("../../../assets/img/search-icon.png");
+            background-repeat: no-repeat;
+            font-size: smaller;
+            background-size: 20px;
+            background-position: right;
+            border: 3px solid transparent;
+        }
+        header nav {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+                header nav div{
+                    padding: 0 1em;
+                    font-size: 1.1rem;
+                    font-weight:200;
+                }
+
+
+                header .menu-burguer {
+                    display: none;
+                }
+
+                .dropdown-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+
+                        .dropdown-menu-toggle {
+                            padding: 0.5rem auto;
+                            
+                        }
+                        .dropdown-items {
+                            padding: 0.5rem;
+                            border-radius: 5px;
+                            border-top-right-radius: 0px;
+                            background-color: rgba(0, 0, 0, 0.833);
+                            box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.8);
+                            position: absolute;
+                            z-index: 1;
+                            margin-top: 27px;
+                            
+                        }
+
+                        .dropdown-items ul {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .dropdown-items ul li {
+                            margin-right: 0;
+                            margin-left: auto;
+                            list-style-type: none;
+                        }
+
+                        .selected-menu {
+                            background-color: rgb(42, 42, 45);
+                            font-weight: 500;
+                            border-radius: 5px;
+                        }
+
+                        .hide {
+                            display: none;
+                        }
