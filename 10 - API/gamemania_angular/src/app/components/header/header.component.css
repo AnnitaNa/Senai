@@ -59,10 +59,11 @@ header {
                     align-items: flex-end;
                 }
 
-                        .dropdown-menu-toggle {
-                            padding: 0.5rem auto;
-                            
+
+                        .dropdown-menu-toggle a img {
+                            height: 25px;
                         }
+
                         .dropdown-items {
                             padding: 0.5rem;
                             border-radius: 5px;
@@ -87,8 +88,7 @@ header {
                         }
 
                         .selected-menu {
-                            background-color: rgb(42, 42, 45);
-                            font-weight: 500;
+                            height: 30px;
                             border-radius: 5px;
                         }
 

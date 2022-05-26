@@ -1,4 +1,6 @@
 export interface Navigation {
-    menu: string;
+    img: string;
+    menuLink: string,
+    alt: string;
     submenu:Array<string>;
 }

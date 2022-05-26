@@ -1,0 +1,26 @@
+<main>
+    <form method="post" id="register-form" (ngSubimit)="onSubimit()" [formGroup]="registerForm" #regForm="ngForm">
+        <div class="form-body">
+            <h3>criar conta</h3>
+            <div class="name">
+                <label for="register-name">Seu nome</label>
+                <input id="register-name" name="register-name" type="text" >
+            </div>
+            <div class="e-mail">
+                <label for="register-email">Digite seu e-mail</label>
+                <input id="register-email" name="register-email" type="email">
+            </div>
+            <div class="password">
+                <label for="Pass">Digite sua senha</label>
+                <input id="Pass" name="Pass" type="password" minlength="6" maxlength="20" required>
+            </div>
+            <div class="password">
+                <label for="confirm-password">Confirme a senha</label>
+                <input id="confirm-password" name="confirm-password" type="password" minlength="6" maxlength="20" required>
+            </div>
+            <div id="check-password"></div>
+            <div><button>continuar</button></div>
+            <p>Ao criar uma conta, você concorda com as Condições de Uso desse site. Por favor verifique a Notificação de Privacidade, Notificação de Cookies e a Notificação de Anúncios Baseados em Interesse.</p>
+        </div>
+    </form>
+</main>

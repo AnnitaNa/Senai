@@ -9,11 +9,14 @@
     </div>
     <nav>
         <div class="dropdown-container" *ngFor="let meno of menus">
-            <div class="dropdown-menu-toggle" >{{meno.menu}}</div>
+            <div class="dropdown-menu-toggle" >
+                <a [routerLink]=meno.menuLink><img [src] = meno.img [alt] = meno.alt></a>
+            </div>
             <div class="dropdown-items hide">
                 <ul> <li *ngFor="let item of meno.submenu">{{item}}</li></ul>
-            </div>
-        </div>
+            </div>    
+         </div>
     </nav>
 </header>
+
 

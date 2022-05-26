@@ -10,15 +10,21 @@ export class HeaderComponent implements OnInit {
 
   menus: Navigation[] = [
     {
-      menu: "menu",
+      img: "../../../assets/img/icon-shop.png",
+      alt: "menu",
+      menuLink: "",
       submenu: ["Home", "Compras", "gift card"],
   },
   {
-    menu: "User",
+    img: "../../../assets/img/icon-user.png",
+    alt: "user",
+    menuLink: "/login",
     submenu: ["Login", "Favorites", "Exit"],
   },
   {
-    menu: "buy",
+    img: "../../../assets/img/icon-buy.png",
+    alt: "buy",
+    menuLink: "",
     submenu: ["Ver carrinho", "Métodos de pagamento"]
   }
   ]

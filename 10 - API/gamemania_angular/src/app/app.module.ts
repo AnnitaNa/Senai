@@ -14,8 +14,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { PropbarComponent } from './components/propbar/propbar.component';
 import {HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './views/home/home.component';
+import { LoginComponent } from './views/login/login.component';
 
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,6 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     BannerComponent,
     PropbarComponent,
+    HomeComponent,
+    LoginComponent,
     
   ],
   imports: [
@@ -39,7 +43,9 @@ import {HttpClientModule} from '@angular/common/http';
     FlexLayoutModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
