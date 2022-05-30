@@ -1,9 +1,9 @@
 export class User {
-    private id: number;
-    private username: string;
+    public email: string;
+    public senha: string;
 
-    constructor (id: number, username: string,) {
-        this.id = id;
-        this.username = username
+    constructor (email: string, senha: string,) {
+        this.email = email;
+        this.senha = senha;
     }
 }

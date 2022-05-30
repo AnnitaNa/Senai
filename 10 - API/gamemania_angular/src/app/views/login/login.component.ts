@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/user.model';
 import { LoginService } from 'src/app/services/login.service';
-
-
 
 @Component({
   selector: 'app-login',
@@ -13,16 +10,19 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  registerForm!: FormGroup
   constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  //regForm = new User();
+  loginModel = new User("","");
+  mensagem ="";
 
-  onSubimit() {
-    
+  onSubmit() {
+    this.loginService.login(this.loginModel).subscribe(
+      (res) => {this.mensagem = "Sucesso!"},
+      (resErro) => {this.mensagem = resErro.error}
+    )
   }
 
 }

@@ -38,3 +38,31 @@
                         font-size: 0.8rem;
                         margin: 0;
                     }
+
+                    /*MEDIA QUERY*/
+        
+    @media only screen and (max-width: 1000px) {
+
+
+        /*  prop - bar  */
+            
+        .prop-bar svg {
+            height: 20px;
+            margin: 0.5rem;
+        }
+
+        .prop-bar .text {
+            margin: 0.5rem 0;
+            width: 10rem;
+        }
+    
+        .prop-bar h4 {
+            font-size: 1rem;
+        }
+    
+        .prop-bar p {
+            font-size: 0.7rem;
+        }
+
+        
+}

@@ -15,9 +15,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { PropbarComponent } from './components/propbar/propbar.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './views/home/home.component';
+import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './views/login/login.component';
-
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BannerComponent,
     PropbarComponent,
     HomeComponent,
-    LoginComponent,
+    LoginComponent
     
   ],
   imports: [
@@ -43,7 +42,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FlexLayoutModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule
   ],
 
   providers: [],

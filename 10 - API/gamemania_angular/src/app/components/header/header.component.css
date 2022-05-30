@@ -95,3 +95,52 @@ header {
                         .hide {
                             display: none;
                         }
+
+    /* MEDIA QUERY */
+
+    @media only screen and (max-width: 1000px) {
+
+    
+        header nav div{
+            padding: 0 0.5rem;
+        }
+
+    }
+    
+    @media only screen and (max-width: 800px) {
+        
+
+        header {
+            padding: 1rem;
+            margin-top: 0; 
+        }
+
+
+}
+@media only screen and (max-width: 700px) {
+
+    /*   head */
+
+     header .logo img {
+                width: 8rem;
+    }
+
+    header .search-bar {
+                width: 50%;
+    }
+    
+    header .dropdown-container {
+                 display: none;
+    }
+                    
+
+    header .menu-burguer {
+        display: flex;
+       
+    }
+
+        header .menu-burguer img {
+            width: 20px;
+            align-items: center;
+        }
+    }

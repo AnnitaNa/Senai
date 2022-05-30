@@ -222,51 +222,12 @@ footer {
 
 /*     MEDIA QUERY        */
 
-    @media only screen and (max-width: 1000px) {
-
-            /*  HEADER */
-        
-            header nav div{
-                padding: 0 0.5rem;
-            }
-
-            /*  prop - bar  */
-                
-            .prop-bar svg {
-                height: 20px;
-                margin: 0.5rem;
-            }
-
-            .prop-bar .text {
-                margin: 0.5rem 0;
-                width: 10rem;
-            }
-        
-            .prop-bar h4 {
-                font-size: 1rem;
-            }
-        
-            .prop-bar p {
-                font-size: 0.7rem;
-            }
-
-            
-    }
-
-
-
+   
     @media only screen and (max-width: 800px) {
         
             .sub-menu {
                     display: none;
                 }
-
-            header {
-                padding: 1rem;
-                margin-top: 0; 
-            }
-
-
     }
 
     @media only screen and (max-width: 700px) {
@@ -274,37 +235,7 @@ footer {
             html {
                 font-size: 14px;
             }
-
-
-            /*   head */
-
-             header .logo img {
-                        width: 8rem;
-            }
-
-            header .search-bar {
-                        width: 50%;
-            }
-            
-            header .dropdown-container {
-                         display: none;
-            }
-                            
-
-            header .menu-burguer {
-                display: flex;
-               
-            }
-
-                header .menu-burguer img {
-                    width: 20px;
-                    align-items: center;
-                }
-
-             /*  prop - bar  */
-    
-
-                    
+          
             #newsletter svg{
                 height: 25px;
             }
@@ -327,40 +258,14 @@ footer {
                 font-size: 0.9rem;
             }
 
-            .glider-container {
-                margin: 1rem 1rem;
-            }
+
 
     }
 
-    @media only screen and (max-width: 600px) {
-
-            .figure-container .img-container {
-                height: 60%;
-            }
-
-                                
-            .figure-container figcaption {
-                font-size: large;
-            }
-
-                figcaption .details {
-                    font-size: 1rem;
-                }
-        
-            .figure-container button {
-                padding: 0.2rem 1rem;
-                margin-bottom: 1rem;
-            }
-
-    }
-
-
+    
     @media only screen and (max-width: 500px) {
             
-            .figure-container figcaption {
-                font-size:medium;
-            }
+
 
             #newsletter h4 {
                 display: none;
