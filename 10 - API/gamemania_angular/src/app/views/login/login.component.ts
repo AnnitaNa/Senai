@@ -9,20 +9,23 @@ import { LoginService } from 'src/app/services/login.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  ngOnInit(): void {}
 
   constructor(private loginService: LoginService, private router: Router) { }
 
-  ngOnInit(): void {
-  }
-
-  loginModel = new User("","");
+  loginModel = new User();
   mensagem ="";
 
   onSubmit() {
     this.loginService.login(this.loginModel).subscribe(
-      (res) => {this.mensagem = "Sucesso!"},
-      (resErro) => {this.mensagem = resErro.error}
+        (verdade) =>{ 
+          this.mensagem = "sucesso!"
+          this.router.navigateByUrl("")
+        }, 
+        (erro) => { this.mensagem = erro.error}
     )
   }
 
 }
+
+

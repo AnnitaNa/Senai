@@ -1,0 +1,47 @@
+
+ /*  user FORM */    
+ 
+.container {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+ .form-body {
+           margin: 5rem;
+           display: flex;
+           padding: 2rem;
+           flex-direction: column;
+           align-items: center;
+           background-color: rgb(225, 225, 225);
+           width: 300px;
+           box-shadow: 5px 5px 10px rgb(109, 109, 109);
+           border-radius: 5px;
+       }
+.form-body div{
+           display: flex;
+           flex-direction: column;
+           padding: 0.5rem 0;
+       }
+ .form-body button {
+           padding: 0.2rem;
+           border-radius: 5px;
+           margin-top: 0.5rem;
+       }
+ .form-body input {
+           padding: 0.1rem;
+           border-radius: 5px;
+           margin-top: 0.25rem;
+       }
+
+  p {
+           margin-top: 1rem;
+           font-size: 0.75rem;
+           text-align: justify;
+           line-height: 95%;
+       }
+
+       p #mensagem {
+           font-weight: bold;
+       }

@@ -1,15 +1,23 @@
 <main>
-    <form #usersForm = "ngForm" (ngSubmit)="onSubmit()">
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" [(ngModel)]="loginModel.email">
-        </div>
-        <div>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" [(ngModel)]="loginModel.senha">
-        </div>
-        <button id="botao-enviar" type="submit">Fazer Login</button>
-    </form>
-    <p id="mensagem" *ngIf=" mensagem !='' ">{{mensagem}}</p>
     
+    <div class="container">
+        <form #usersForm = "ngForm" (ngSubmit)="onSubmit()" class="form-body">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" [(ngModel)]="loginModel.email">
+                </div>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" [(ngModel)]="loginModel.password">
+                </div>
+                
+                <button id="botao-enviar" type="submit">Fazer Login</button>
+            
+            <p id="mensagem" *ngIf=" mensagem !='' ">{{mensagem}}</p>
+            <p>Ao criar uma conta, você concorda com as Condições de Uso desse site. Por favor verifique a Notificação de Privacidade, Notificação de Cookies e a Notificação de Anúncios Baseados em Interesse.</p>
+        </form>
+    
+        
+        
+    </div>
 </main>
