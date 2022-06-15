@@ -45,3 +45,9 @@
        p #mensagem {
            font-weight: bold;
        }
+
+       #mensagem {
+           color: red;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }

@@ -11,6 +11,12 @@
       "password": "$2a$10$yF32EvWP0Ex.VL0oJTsgIu3TyQTHq7CpZAOuTwbuNH0ONfW1rxUBW",
       "nome": "meu teste",
       "id": 2
+    },
+    {
+      "email": "teste@email.com",
+      "password": "teste1",
+      "nome": "meu teste",
+      "id": 3
     }
   ],
   "product": [
