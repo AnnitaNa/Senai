@@ -9,3 +9,5 @@ PessoaFisica normal = new PessoaFisica();
 normal.nome = "Normalíssima";
 Console.WriteLine(normal.nome);
 normal.pagarImposto();
+PessoaJuridica estranha = new PessoaJuridica();
+estranha.pagarImposto();
