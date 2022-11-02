@@ -28,3 +28,33 @@ C:\Users\Administrador\Desktop\seguranca\Chapter\Chapter.WebApi\obj\Release\net5
 C:\Users\Administrador\Desktop\seguranca\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.pdb
 C:\Users\Administrador\Desktop\seguranca\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.genruntimeconfig.cache
 C:\Users\Administrador\Desktop\seguranca\Chapter\Chapter.WebApi\bin\Release\net5.0\web.config
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\appsettings.Development.json
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\appsettings.json
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\web.config
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.StaticWebAssets.xml
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.exe
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.deps.json
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.runtimeconfig.json
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.runtimeconfig.dev.json
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Chapter.WebApi.pdb
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.csproj.AssemblyReference.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.AssemblyInfoInputs.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.AssemblyInfo.cs
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.MvcApplicationPartsAssemblyInfo.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\scopedcss\bundle\Chapter.WebApi.styles.css
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\staticwebassets\Chapter.WebApi.StaticWebAssets.Manifest.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.RazorTargetAssemblyInfo.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.csproj.CopyComplete
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\refint\Chapter.WebApi.dll
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.pdb
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\Chapter.WebApi.genruntimeconfig.cache
+D:\UNIVERSIDADES\SENAI\programas\12 - back end\A3\Chapter\Chapter.WebApi\obj\Release\net5.0\ref\Chapter.WebApi.dll
