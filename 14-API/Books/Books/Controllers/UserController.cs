@@ -1,4 +1,5 @@
-﻿using Books.Models;
+﻿using Books.Interfaces;
+using Books.Models;
 using Books.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,12 +9,12 @@ namespace Books.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 
-
+/*   NAO ESTA FUNCIONANDO A CONTROLLER!!!!!!!!  */
 public class UserController : Controller
 {
-    private readonly UserRepository _userRepository;
+    private readonly IUserRepository _userRepository;
 
-    public UserController(UserRepository userRepository)
+    public UserController(IUserRepository userRepository)
     {
         _userRepository = userRepository;
     }
@@ -92,4 +93,5 @@ public class UserController : Controller
             throw new Exception(e.Message);
         }
     }
+    
 }

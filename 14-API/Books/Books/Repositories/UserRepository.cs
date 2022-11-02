@@ -1,11 +1,11 @@
-﻿using Books.Contexts;
+﻿namespace Books.Repositories;
+using Books.Contexts;
 using Books.Interfaces;
 using Books.Models;
 
-namespace Books.Repositories;
-
 public class UserRepository: IUserRepository
 {
+    
     private readonly BookContext _userRepository;
 
     public UserRepository(BookContext userRepository)
@@ -54,4 +54,5 @@ public class UserRepository: IUserRepository
     {
         return _userRepository.Users.FirstOrDefault(user => user.Email == email && user.Senha == senha);
     }
+    
 }
