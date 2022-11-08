@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Oq5q0kG/m7Np84cFKawxx5Hs/Gw/j2fqMhRY9+MUA2RjLpPKEHXzY0kdlLXWCtdNB7IetAlpInxHS5nrnfmBjw==",
+  "dgSpecHash": "ttrfWz7zDIXK+Jni8Fi9O/AHBUM6UpQDgioZaOcA4KqjEw/fmFTgoNAEPRruMcMD8IEAI9etlCP0Od+shZCMZw==",
   "success": true,
   "projectFilePath": "D:\\UNIVERSIDADES\\SENAI\\programas\\14-API\\Books\\Books\\Books.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tanic\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tanic\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\tanic\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.11\\microsoft.aspnetcore.authentication.jwtbearer.6.0.11.nupkg.sha512",
     "C:\\Users\\tanic\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\tanic\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\tanic\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.0\\microsoft.data.sqlclient.5.0.0.nupkg.sha512",
