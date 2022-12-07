@@ -1,0 +1,12 @@
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\bin\Debug\net6.0\Projeto-teste.deps.json
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\bin\Debug\net6.0\Projeto-teste.dll
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\bin\Debug\net6.0\Projeto-teste.pdb
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.csproj.AssemblyReference.cache
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.AssemblyInfoInputs.cache
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.AssemblyInfo.cs
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.dll
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\refint\Projeto-teste.dll
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\Projeto-teste.pdb
+D:\UNIVERSIDADES\SENAI\programas\15-testes\Projeto-teste\Projeto-teste\obj\Debug\net6.0\ref\Projeto-teste.dll
